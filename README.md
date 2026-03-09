@@ -1,59 +1,219 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 👤 SIMPLE EMPLOYEE DETAILS
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+### Employee Management System
 
-## About Laravel
+**Add. View. Edit. Manage.**
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+A clean, no-frills employee management web app built with Laravel and Blade — letting you create, read, update, and delete employee records through a straightforward, responsive interface.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+[![Laravel](https://img.shields.io/badge/Laravel-11-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+[![PHP](https://img.shields.io/badge/PHP-8.2-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net)
+[![Blade](https://img.shields.io/badge/Blade-Templates-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com/docs/blade)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## ✨ Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### 👥 Employee Records
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- View a **list of all employees** in a clean, scannable layout
+- See **detailed profile information** for each employee at a glance
+- Data includes name, position, department, and other key details
 
-## Laravel Sponsors
+### ✏️ CRUD Operations
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+| Operation | Description |
+|-----------|-------------|
+| **Create** | Add a new employee via a validated form |
+| **Read** | Browse all employees or view a single employee's details |
+| **Update** | Edit any employee's information through an intuitive edit form |
+| **Delete** | Remove an employee record with a confirmation step |
 
-### Premium Partners
+### 🛡️ Form Validation
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- Server-side validation on all create and update requests
+- Inline error messages to guide users on invalid input
+- Old input preserved on validation failure so users don't re-type everything
 
-## Contributing
+### 📐 Blade Templating
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- Modular, reusable **Blade components and layouts** for a consistent UI
+- Minimal custom CSS on top of a utility framework for fast, clean styling
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🛠️ Tech Stack
 
-## Security Vulnerabilities
+| Technology | Purpose |
+|-----------|---------|
+| **Laravel** | MVC framework — routing, controllers, Eloquent ORM, validation |
+| **PHP** | Server-side application logic |
+| **Blade** | Laravel's templating engine for dynamic HTML views |
+| **Eloquent ORM** | Expressive database interactions and model relationships |
+| **MySQL / SQLite** | Relational database for persisting employee data |
+| **Vite** | Asset bundling for CSS and JavaScript |
+| **CSS** | Custom styling on top of the base layout |
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 🚀 Getting Started
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Prerequisites
+
+- [PHP](https://www.php.net) 8.1+
+- [Composer](https://getcomposer.org)
+- [Node.js](https://nodejs.org) 18+
+- A database (MySQL, PostgreSQL, or SQLite)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/jpmasangkay/simple-employee-details.git
+cd simple-employee-details
+
+# Install PHP dependencies
+composer install
+
+# Install Node dependencies
+npm install
+```
+
+### Environment Setup
+
+```bash
+# Copy the example env file
+cp .env.example .env
+
+# Generate the application key
+php artisan key:generate
+```
+
+Then open `.env` and configure your database connection:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=employee_details
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### Database Migration
+
+```bash
+php artisan migrate
+
+# Optionally seed the database with sample data
+php artisan db:seed
+```
+
+### Running the App
+
+```bash
+# Start the Vite dev server (in one terminal)
+npm run dev
+
+# Start the Laravel dev server (in another terminal)
+php artisan serve
+```
+
+Open [http://localhost:8000](http://localhost:8000) in your browser.
+
+### Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `php artisan serve` | Start the Laravel development server |
+| `npm run dev` | Start the Vite asset dev server |
+| `npm run build` | Build and bundle assets for production |
+| `php artisan migrate` | Run all pending database migrations |
+| `php artisan migrate:fresh --seed` | Drop all tables, re-migrate, and seed |
+| `php artisan test` | Run the test suite |
+
+---
+
+## 📁 Project Structure
+
+```
+simple-employee-details/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/             # Request handling & business logic
+│   │   └── Requests/                # Form request validation classes
+│   └── Models/                      # Eloquent models (Employee, etc.)
+├── bootstrap/                       # Laravel bootstrap files
+├── config/                          # Application configuration files
+├── database/
+│   ├── migrations/                  # Database schema definitions
+│   ├── factories/                   # Model factories for testing/seeding
+│   └── seeders/                     # Database seeders
+├── public/                          # Web root — compiled assets & entry point
+├── resources/
+│   ├── views/                       # Blade templates
+│   │   ├── layouts/                 # Base layout templates
+│   │   └── employees/               # Employee CRUD views (index, show, create, edit)
+│   ├── css/                         # Source stylesheets
+│   └── js/                          # Source JavaScript
+├── routes/
+│   └── web.php                      # Application web routes
+├── storage/                         # Logs, cache, and file uploads
+├── tests/                           # Feature and unit tests
+├── .env.example                     # Environment variable template
+├── artisan                          # Laravel CLI entry point
+├── composer.json                    # PHP dependencies
+├── package.json                     # Node dependencies
+└── vite.config.js                   # Vite bundler configuration
+```
+
+---
+
+## 🧠 How It Works
+
+Umbra is a standard **Laravel MVC application**:
+
+1. **Routing** — `routes/web.php` defines RESTful resource routes for employees, mapping HTTP verbs to controller actions (`index`, `create`, `store`, `show`, `edit`, `update`, `destroy`).
+
+2. **Controllers** — The `EmployeeController` handles each action: fetching records from the database, validating incoming form data, persisting changes via Eloquent, and returning the appropriate Blade view or redirect.
+
+3. **Eloquent ORM** — The `Employee` model maps to the `employees` database table and handles all query logic. Migrations define the schema in a version-controlled, database-agnostic way.
+
+4. **Blade Views** — Templates in `resources/views/employees/` render the UI for each CRUD action. A shared layout in `resources/views/layouts/` provides the consistent page shell (navigation, header, footer).
+
+5. **Validation** — Form Request classes (or inline controller validation) ensure all input is sanitised before touching the database. Errors are passed back to views automatically by Laravel.
+
+---
+
+## 🌐 Deployment
+
+To deploy to a production server:
+
+```bash
+# Install dependencies (no dev packages)
+composer install --no-dev --optimize-autoloader
+
+# Build production assets
+npm run build
+
+# Run migrations on the production database
+php artisan migrate --force
+
+# Cache config, routes, and views for performance
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+```
+
+Point your web server (Apache / Nginx) document root to the `public/` directory.
+
+---
+
+## 👏 Acknowledgements
+
+- Built with [Laravel](https://laravel.com/) — The PHP Framework for Web Artisans
+- Asset pipeline powered by [Vite](https://vitejs.dev/)
+- Templating via [Laravel Blade](https://laravel.com/docs/blade)
+
+---
